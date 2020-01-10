@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "demo",
-    "slug": "demo",
+    "name": "AroundTheCorner.io",
+    "slug": "aroundthecorner",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
