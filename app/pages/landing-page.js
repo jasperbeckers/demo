@@ -14,10 +14,22 @@ class Content extends Component {
     content_ids: []
   };
 
+  loadList() {
+    fetch("http://localhost:8080//?request=list")
+      .then(res => res.json())
+      .then(response => {
+        this.setState({
+          content_displaynames: response.displaynames,
+          content_ids: response.ids
+        });
+      });
+  }
+
   componentDidMount() {
     Font.loadAsync({
       "roboto-thin": require("../../assets/fonts/Roboto-Thin.ttf")
     });
+    this.loadList();
   }
 
   render() {
