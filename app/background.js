@@ -16,8 +16,7 @@ class BackgroundImage extends Component {
 
 const styles = StyleSheet.create({
   backgroundImage: {
-    width: "100%",
-    height: "100%"
+    flex: 1
   }
 });
 

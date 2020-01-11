@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import BackgroundImage from "./background";
 import * as Font from "expo-font";
 
@@ -14,9 +14,16 @@ class Content extends Component {
     return (
       <View style={styles.appstyle}>
         <BackgroundImage>
-          <View Viewstyle={styles.textstyle}>
+          <View style={styles.center}>
+            <View style={{ height: "20%" }} />
+            <Image
+              source={require("../assets/backpack.png")}
+              style={{ width: 110, height: 110 }}
+            />
             <Text style={styles.title}>Coming Soon!</Text>
-            <Text style={styles.subtitle}>Your travel guide to anywhere.</Text>
+            <Text style={styles.subtitle}>
+              Your smart travel guide to anywhere.
+            </Text>
           </View>
         </BackgroundImage>
       </View>
@@ -25,13 +32,14 @@ class Content extends Component {
 }
 
 const styles = StyleSheet.create({
-  textstyle: {
+  center: {
+    flex: 1,
     alignItems: "center",
-    justifyContent: "center"
+    //justifyContent: "center",
+    flexDirection: "column"
   },
   appstyle: {
-    flex: 1,
-    backgroundColor: "whitesmoke"
+    flex: 1
   },
   title: {
     fontWeight: "bold",
