@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import Content from "./app/content";
+import Content from "./app/pages/landing-page";
 
 export default function App() {
   return (

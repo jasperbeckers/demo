@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import BackgroundImage from "./background";
+import BackgroundImage from "../background";
 import * as Font from "expo-font";
 
 class Content extends Component {
   componentDidMount() {
     Font.loadAsync({
-      "roboto-thin": require("../assets/fonts/Roboto-Thin.ttf")
+      "roboto-thin": require("../../assets/fonts/Roboto-Thin.ttf")
     });
   }
 
@@ -17,7 +17,7 @@ class Content extends Component {
           <View style={styles.center}>
             <View style={{ height: "20%" }} />
             <Image
-              source={require("../assets/backpack.png")}
+              source={require("../../assets/backpack.png")}
               style={{ width: 110, height: 110 }}
             />
             <Text style={styles.title}>Coming Soon!</Text>
