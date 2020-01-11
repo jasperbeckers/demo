@@ -16,7 +16,7 @@ class Content extends Component {
         <BackgroundImage>
           <View Viewstyle={styles.textstyle}>
             <Text style={styles.title}>Coming Soon!</Text>
-            <Text style={styles.subtitle}>Your travel guide to anywhere</Text>
+            <Text style={styles.subtitle}>Your travel guide to anywhere.</Text>
           </View>
         </BackgroundImage>
       </View>
