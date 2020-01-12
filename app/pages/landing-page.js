@@ -57,17 +57,6 @@ class Content extends Component {
                 <Picker.Item label="7" />
               </Picker>
               <Text style={styles.subtitle}> day trip to </Text>
-              <Picker
-                selectedValue={this.state.locationValue}
-                onValueChange={(itemValue, itemIndex) =>
-                  this.setState({ locationValue: itemValue })
-                }
-                mode={"dropdown"}
-              >
-                {this.state.content_displaynames.map((item, index) => {
-                  return <Picker.Item label={item} value={index} key={index} />;
-                })}
-              </Picker>
               <Text style={styles.subtitle} />
             </View>
             <MainButton />
