@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
-import Content from "./app/pages/coming-soon-page";
+import Content from "./app/pages/landing-page";
 
 class App extends Component {
   render() {
