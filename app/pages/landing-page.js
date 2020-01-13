@@ -4,7 +4,6 @@ import BackgroundImage from "../background";
 import MainButton from "../main-button";
 import * as Font from "expo-font";
 import SortableGrid from "react-native-sortable-grid";
-import { DraggableGrid } from "react-native-draggable-grid";
 
 class Content extends Component {
   state = {
@@ -13,19 +12,7 @@ class Content extends Component {
     plan: [],
     is_front_page: true,
     content_displaynames: [],
-    content_ids: [],
-    data: [
-      { name: "1", key: "one" },
-      { name: "2", key: "two" },
-      { name: "3", key: "three" },
-      { name: "4", key: "four" },
-      { name: "5", key: "five" },
-      { name: "6", key: "six" },
-      { name: "7", key: "seven" },
-      { name: "8", key: "eight" },
-      { name: "9", key: "night" },
-      { name: "0", key: "zero" }
-    ]
+    content_ids: []
   };
 
   loadList() {
@@ -46,14 +33,6 @@ class Content extends Component {
     this.loadList();
   }
 
-  render_item(item: { name: string, key: string }) {
-    return (
-      <View style={styles.item} key={item.key}>
-        <Text style={styles.item_text}>{item.name}</Text>
-      </View>
-    );
-  }
-
   render() {
     return (
       <View style={styles.appstyle}>
@@ -67,14 +46,6 @@ class Content extends Component {
                   </View>
                 ))}
               </SortableGrid>
-            </View>
-            <View style={{ height: "5%" }} />
-            <View style={{ width: 100, height: 100, backgroundColor: "red" }}>
-              <DraggableGrid
-                numColumns={4}
-                renderItem={this.render_item}
-                data={this.state.data}
-              />
             </View>
             <View style={{ height: "5%" }} />
             <Text style={styles.title}>What's around the corner?</Text>
