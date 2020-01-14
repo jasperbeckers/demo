@@ -14,7 +14,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-web": "~0.11.7",
     "expo-font": "8.0.0",
-    "react-native-sortable-grid": "https://github.com/ollija/react-native-sortable-grid/archive/master.tar.gz"
+    "react-native-sortable-grid": "^2.0.0"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.0.0",
