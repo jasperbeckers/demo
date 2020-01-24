@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Picker } from "react-native";
 import BackgroundImage from "../background";
 import MainButton from "../main-button";
 import * as Font from "expo-font";
+import Sortable from "../sortable/Sortable.js";
 
 class Content extends Component {
   state = {
@@ -37,6 +38,7 @@ class Content extends Component {
       <View style={styles.appstyle}>
         <BackgroundImage>
           <View style={styles.center}>
+            <Sortable />
             <View style={{ height: "5%" }} />
             <Text style={styles.title}>What's around the corner?</Text>
             <View style={{ flexDirection: "row", marginVertical: 10 }}>
