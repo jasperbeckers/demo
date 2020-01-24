@@ -4,8 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm install --quiet --global expo-cli
-        - npm uninstall react-native-sortable-grid
-        - npm install jasperbeckers/react-native-sortable-grid
+        - npm ls
         - ls
         - >
           if [ -f yarn.lock ]; then

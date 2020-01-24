@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Picker } from "react-native";
 import BackgroundImage from "../background";
 import MainButton from "../main-button";
 import * as Font from "expo-font";
-import SortableGrid from "react-native-sortable-grid";
 
 class Content extends Component {
   state = {
@@ -38,15 +37,6 @@ class Content extends Component {
       <View style={styles.appstyle}>
         <BackgroundImage>
           <View style={styles.center}>
-            <View style={{ width: 100, height: 100, backgroundColor: "red" }}>
-              <SortableGrid>
-                {["a", "b", "c"].map((letter, index) => (
-                  <View style={{ backgroundColor: "yellow" }} key={index}>
-                    <Text>{letter}</Text>
-                  </View>
-                ))}
-              </SortableGrid>
-            </View>
             <View style={{ height: "5%" }} />
             <Text style={styles.title}>What's around the corner?</Text>
             <View style={{ flexDirection: "row", marginVertical: 10 }}>
