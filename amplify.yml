@@ -4,6 +4,9 @@ frontend:
     preBuild:
       commands:
         - npm install --quiet --global expo-cli
+        - npm install react-dnd-html5-backend
+        - npm install react-dnd
+        - npm install immutability-helper
         - npm ls
         - ls
         - >
