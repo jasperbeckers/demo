@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
     borderRadius: 90,
     backgroundColor: "#008000",
     alignItems: "center",
-    marginTop: 20,
+    marginTop: 5,
+    marginBottom: 15,
     paddingTop: 15,
     paddingLeft: 3,
 
@@ -52,7 +53,8 @@ const styles = StyleSheet.create({
       height: 2
     },
     shadowOpacity: 0.4,
-    shadowRadius: 5
+    shadowRadius: 5,
+    zIndex: -1
   },
   button_highlight: {
     width: 90,
@@ -60,7 +62,8 @@ const styles = StyleSheet.create({
     borderRadius: 90,
     backgroundColor: "#008c00",
     alignItems: "center",
-    marginTop: 20,
+    marginTop: 5,
+    marginBottom: 15,
     paddingTop: 15,
     paddingLeft: 3,
 
@@ -70,7 +73,8 @@ const styles = StyleSheet.create({
       height: 2
     },
     shadowOpacity: 0.6,
-    shadowRadius: 7
+    shadowRadius: 7,
+    zIndex: -1
   }
 });
 
