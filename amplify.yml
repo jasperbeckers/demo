@@ -9,6 +9,7 @@ frontend:
         - npm install immutability-helper
         - npm install react-select
         - npm install react-native-web-webview
+        - npm install webpack
         - npm install file-loader
         - npm ls
         - ls
