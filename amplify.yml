@@ -8,6 +8,7 @@ frontend:
         - npm install react-dnd
         - npm install immutability-helper
         - npm install react-select
+        - npm install react-native-web-webview
         - npm ls
         - ls
         - >

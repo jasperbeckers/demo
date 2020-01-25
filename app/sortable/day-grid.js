@@ -3,6 +3,7 @@ import { View } from "react-native";
 import Backend from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import DayItem from "./day-item";
+import BookingAd from "../booking-ad/booking-ad"
 
 class Sortable extends Component {
   render() {
@@ -20,15 +21,15 @@ class Sortable extends Component {
             {this.props.plan.map((list, index) => {
               return <DayItem id={index} list={list} key={index} />;
             })}
+            <BookingAd
+             show={this.props.plan.length > 0}
+             nr={this.props.plan.length}
+            />
           </View>
         </View>
       </DndProvider>
     );
 
-    //<BookingAd
-    // show={this.props.plan.length > 0}
-    //nr={this.props.plan.length}
-    ///>
   }
 }
 
