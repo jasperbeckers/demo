@@ -87,7 +87,7 @@ class Content extends Component {
               <View style={{ height: "5%" }} />
               <Text style={styles.title}>What's around the corner?</Text>
 
-              <View style={{ flexDirection: "row", marginVertical: 10 }}>
+              <View style={{ flex: 1, flexDirection: "row", flexWrap: "wrap", alignContent: "center", marginVertical: 10 }}>
                 <Text style={styles.text}>Ideas for a </Text>
                 <View style={{ width: 70, zIndex: 100 }}>
                   <Select
@@ -116,6 +116,7 @@ class Content extends Component {
                   />
                 </View>
               </View>
+              <Text style={styles.text}>More options</Text>
               <MainButton onPress={this.onButtonPressed} />
               <DayGrid plan={this.state.plan} />
             </View>
