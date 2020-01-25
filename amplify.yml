@@ -7,6 +7,7 @@ frontend:
         - npm install react-dnd-html5-backend
         - npm install react-dnd
         - npm install immutability-helper
+        - npm install react-select
         - npm ls
         - ls
         - >
